@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3046BD9E22D8380F00441F5C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30A8B31722D7EDF0005832A1 /* Roboto-Bold.ttf */; };
+		3046BD9F22D8381200441F5C /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30A8B31622D7EDF0005832A1 /* Roboto-Regular.ttf */; };
+		3046BDA122D8496700441F5C /* WidgetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3046BDA022D8496700441F5C /* WidgetExtensions.swift */; };
+		30A8B2F022D7E34B005832A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B2EF22D7E34B005832A1 /* AppDelegate.swift */; };
+		30A8B2F222D7E34B005832A1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B2F122D7E34B005832A1 /* MainViewController.swift */; };
+		30A8B2F722D7E34C005832A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A8B2F622D7E34C005832A1 /* Assets.xcassets */; };
+		30A8B2FA22D7E34C005832A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A8B2F822D7E34C005832A1 /* LaunchScreen.storyboard */; };
+		30A8B30522D7E34C005832A1 /* MaterialDesignSearchbarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B30422D7E34C005832A1 /* MaterialDesignSearchbarUITests.swift */; };
+		30A8B31322D7E442005832A1 /* Searchbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B31222D7E442005832A1 /* Searchbar.swift */; };
+		30A8B31922D7F25F005832A1 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B31822D7F25F005832A1 /* MaterialTextField.swift */; };
+		30A8B31B22D7F26A005832A1 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B31A22D7F26A005832A1 /* MaterialButton.swift */; };
+		30A8B31D22D7F7A3005832A1 /* RippleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B31C22D7F7A3005832A1 /* RippleLayer.swift */; };
+		30A8B32022D7F888005832A1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B31F22D7F888005832A1 /* Extensions.swift */; };
+		30A8B32222D817B0005832A1 /* AnimHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B32122D817B0005832A1 /* AnimHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30A8B30122D7E34C005832A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30A8B2E422D7E34B005832A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30A8B2EB22D7E34B005832A1;
+			remoteInfo = MaterialDesignSearchbar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3046BDA022D8496700441F5C /* WidgetExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtensions.swift; sourceTree = "<group>"; };
+		30A8B2EC22D7E34B005832A1 /* MaterialDesignSearchbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialDesignSearchbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30A8B2EF22D7E34B005832A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30A8B2F122D7E34B005832A1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		30A8B2F622D7E34C005832A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30A8B2F922D7E34C005832A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30A8B2FB22D7E34C005832A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30A8B30022D7E34C005832A1 /* MaterialDesignSearchbarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialDesignSearchbarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30A8B30422D7E34C005832A1 /* MaterialDesignSearchbarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialDesignSearchbarUITests.swift; sourceTree = "<group>"; };
+		30A8B30622D7E34C005832A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30A8B31222D7E442005832A1 /* Searchbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searchbar.swift; sourceTree = "<group>"; };
+		30A8B31622D7EDF0005832A1 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		30A8B31722D7EDF0005832A1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		30A8B31822D7F25F005832A1 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		30A8B31A22D7F26A005832A1 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		30A8B31C22D7F7A3005832A1 /* RippleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleLayer.swift; sourceTree = "<group>"; };
+		30A8B31F22D7F888005832A1 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		30A8B32122D817B0005832A1 /* AnimHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30A8B2E922D7E34B005832A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30A8B2FD22D7E34C005832A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30A8B2E322D7E34B005832A1 = {
+			isa = PBXGroup;
+			children = (
+				30A8B2EE22D7E34B005832A1 /* MaterialDesignSearchbar */,
+				30A8B30322D7E34C005832A1 /* MaterialDesignSearchbarUITests */,
+				30A8B2ED22D7E34B005832A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30A8B2ED22D7E34B005832A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30A8B2EC22D7E34B005832A1 /* MaterialDesignSearchbar.app */,
+				30A8B30022D7E34C005832A1 /* MaterialDesignSearchbarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30A8B2EE22D7E34B005832A1 /* MaterialDesignSearchbar */ = {
+			isa = PBXGroup;
+			children = (
+				30A8B31E22D7F7A9005832A1 /* WidgetSource */,
+				30A8B31122D7E41A005832A1 /* Source */,
+				30A8B2EF22D7E34B005832A1 /* AppDelegate.swift */,
+				30A8B2F122D7E34B005832A1 /* MainViewController.swift */,
+				30A8B31422D7EDC6005832A1 /* Resources */,
+				30A8B2FB22D7E34C005832A1 /* Info.plist */,
+			);
+			path = MaterialDesignSearchbar;
+			sourceTree = "<group>";
+		};
+		30A8B30322D7E34C005832A1 /* MaterialDesignSearchbarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30A8B30422D7E34C005832A1 /* MaterialDesignSearchbarUITests.swift */,
+				30A8B30622D7E34C005832A1 /* Info.plist */,
+			);
+			path = MaterialDesignSearchbarUITests;
+			sourceTree = "<group>";
+		};
+		30A8B31122D7E41A005832A1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				30A8B31F22D7F888005832A1 /* Extensions.swift */,
+				30A8B31222D7E442005832A1 /* Searchbar.swift */,
+				30A8B32122D817B0005832A1 /* AnimHelper.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		30A8B31422D7EDC6005832A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30A8B31522D7EDDC005832A1 /* Fonts */,
+				30A8B2F622D7E34C005832A1 /* Assets.xcassets */,
+				30A8B2F822D7E34C005832A1 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30A8B31522D7EDDC005832A1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				30A8B31722D7EDF0005832A1 /* Roboto-Bold.ttf */,
+				30A8B31622D7EDF0005832A1 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		30A8B31E22D7F7A9005832A1 /* WidgetSource */ = {
+			isa = PBXGroup;
+			children = (
+				30A8B31C22D7F7A3005832A1 /* RippleLayer.swift */,
+				30A8B31A22D7F26A005832A1 /* MaterialButton.swift */,
+				30A8B31822D7F25F005832A1 /* MaterialTextField.swift */,
+				3046BDA022D8496700441F5C /* WidgetExtensions.swift */,
+			);
+			path = WidgetSource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30A8B2EB22D7E34B005832A1 /* MaterialDesignSearchbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30A8B30922D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchbar" */;
+			buildPhases = (
+				30A8B2E822D7E34B005832A1 /* Sources */,
+				30A8B2E922D7E34B005832A1 /* Frameworks */,
+				30A8B2EA22D7E34B005832A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaterialDesignSearchbar;
+			productName = MaterialDesignSearchbar;
+			productReference = 30A8B2EC22D7E34B005832A1 /* MaterialDesignSearchbar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30A8B2FF22D7E34C005832A1 /* MaterialDesignSearchbarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30A8B30C22D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchbarUITests" */;
+			buildPhases = (
+				30A8B2FC22D7E34C005832A1 /* Sources */,
+				30A8B2FD22D7E34C005832A1 /* Frameworks */,
+				30A8B2FE22D7E34C005832A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30A8B30222D7E34C005832A1 /* PBXTargetDependency */,
+			);
+			name = MaterialDesignSearchbarUITests;
+			productName = MaterialDesignSearchbarUITests;
+			productReference = 30A8B30022D7E34C005832A1 /* MaterialDesignSearchbarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30A8B2E422D7E34B005832A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Ho, Tsungwei";
+				TargetAttributes = {
+					30A8B2EB22D7E34B005832A1 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					30A8B2FF22D7E34C005832A1 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 30A8B2EB22D7E34B005832A1;
+					};
+				};
+			};
+			buildConfigurationList = 30A8B2E722D7E34B005832A1 /* Build configuration list for PBXProject "MaterialDesignSearchbar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30A8B2E322D7E34B005832A1;
+			productRefGroup = 30A8B2ED22D7E34B005832A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30A8B2EB22D7E34B005832A1 /* MaterialDesignSearchbar */,
+				30A8B2FF22D7E34C005832A1 /* MaterialDesignSearchbarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30A8B2EA22D7E34B005832A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30A8B2FA22D7E34C005832A1 /* LaunchScreen.storyboard in Resources */,
+				30A8B2F722D7E34C005832A1 /* Assets.xcassets in Resources */,
+				3046BD9F22D8381200441F5C /* Roboto-Regular.ttf in Resources */,
+				3046BD9E22D8380F00441F5C /* Roboto-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30A8B2FE22D7E34C005832A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30A8B2E822D7E34B005832A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30A8B32222D817B0005832A1 /* AnimHelper.swift in Sources */,
+				30A8B2F222D7E34B005832A1 /* MainViewController.swift in Sources */,
+				30A8B31322D7E442005832A1 /* Searchbar.swift in Sources */,
+				30A8B31B22D7F26A005832A1 /* MaterialButton.swift in Sources */,
+				3046BDA122D8496700441F5C /* WidgetExtensions.swift in Sources */,
+				30A8B32022D7F888005832A1 /* Extensions.swift in Sources */,
+				30A8B31922D7F25F005832A1 /* MaterialTextField.swift in Sources */,
+				30A8B31D22D7F7A3005832A1 /* RippleLayer.swift in Sources */,
+				30A8B2F022D7E34B005832A1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30A8B2FC22D7E34C005832A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30A8B30522D7E34C005832A1 /* MaterialDesignSearchbarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30A8B30222D7E34C005832A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30A8B2EB22D7E34B005832A1 /* MaterialDesignSearchbar */;
+			targetProxy = 30A8B30122D7E34C005832A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30A8B2F822D7E34C005832A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30A8B2F922D7E34C005832A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30A8B30722D7E34C005832A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30A8B30822D7E34C005832A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30A8B30A22D7E34C005832A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 588Y89GTAL;
+				INFOPLIST_FILE = MaterialDesignSearchbar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelho.MaterialDesignSearchbar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30A8B30B22D7E34C005832A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 588Y89GTAL;
+				INFOPLIST_FILE = MaterialDesignSearchbar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelho.MaterialDesignSearchbar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30A8B30D22D7E34C005832A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MaterialDesignSearchbarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelho.MaterialDesignSearchbarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MaterialDesignSearchbar;
+			};
+			name = Debug;
+		};
+		30A8B30E22D7E34C005832A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MaterialDesignSearchbarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelho.MaterialDesignSearchbarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MaterialDesignSearchbar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30A8B2E722D7E34B005832A1 /* Build configuration list for PBXProject "MaterialDesignSearchbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30A8B30722D7E34C005832A1 /* Debug */,
+				30A8B30822D7E34C005832A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30A8B30922D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30A8B30A22D7E34C005832A1 /* Debug */,
+				30A8B30B22D7E34C005832A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30A8B30C22D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchbarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30A8B30D22D7E34C005832A1 /* Debug */,
+				30A8B30E22D7E34C005832A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30A8B2E422D7E34B005832A1 /* Project object */;
+}
