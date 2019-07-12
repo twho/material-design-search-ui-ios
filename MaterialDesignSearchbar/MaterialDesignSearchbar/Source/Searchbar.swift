@@ -24,12 +24,12 @@ class Searchbar: UIView, UITextFieldDelegate {
     public var foregroundColor: UIColor = .darkGray
     public var imgLeftBtn: UIImage = #imageLiteral(resourceName: "ic_search")
     // MARK: - Private properties
+    private var stackView: UIStackView!
     private var onTapLeft: BtnAction?
     private var onTapRight: BtnAction?
-    private var stackView: UIStackView!
     private var startSearch: DispatchWorkItem?
     private let animHplr = AnimHelper.shared
-    
+    // Init
     private override init(frame: CGRect) {
         super.init(frame: frame)
         initUI()
@@ -37,14 +37,23 @@ class Searchbar: UIView, UITextFieldDelegate {
         btnRight.addTarget(self, action: #selector(tapRightBtn), for: .touchUpInside)
         textInput.addTarget(self, action: #selector(textFieldDidChange(_ :)), for: .editingChanged)
     }
-    
+    /**
+     Convenience initializer.
+     
+     - Parameter onTapLeft:
+     - Parameter onTapRight:
+     - Parameter delegate:
+     */
     public convenience init(onTapLeft: BtnAction?, onTapRight: BtnAction?, delegate: SearchbarDelegate) {
+        // We use zero here since the size of the view is handled by AutoLayout.
         self.init(frame: .zero)
         self.delegate = delegate
         self.onTapLeft = onTapLeft
         self.onTapRight = onTapRight
     }
-    
+    /**
+     Init UI.
+     */
     private func initUI() {
         self.backgroundColor = .white
         // Set corner border
@@ -72,10 +81,8 @@ class Searchbar: UIView, UITextFieldDelegate {
         stackView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         stackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        btnLeft.widthAnchor.constraint(equalTo: stackView.heightAnchor, multiplier: 1.0).isActive = true
-        btnRight.widthAnchor.constraint(equalTo: stackView.heightAnchor, multiplier: 1.0).isActive = true
-        textInput.leftAnchor.constraint(equalTo: btnLeft.rightAnchor).isActive = true
-        textInput.rightAnchor.constraint(equalTo: btnRight.leftAnchor).isActive = true
+        btnLeft.widthAnchor.constraint(equalTo: stackView.heightAnchor, multiplier: 0.8).isActive = true
+        btnRight.widthAnchor.constraint(equalTo: stackView.heightAnchor, multiplier: 0.8).isActive = true
     }
     
     @objc private func tapLeftBtn() {
@@ -95,7 +102,6 @@ class Searchbar: UIView, UITextFieldDelegate {
             onTapRight?()
         }
     }
-    
     // MARK: UITextFieldDelegate
     @objc private func textFieldDidChange(_ textField: UITextField) {
         startSearch?.cancel()
@@ -140,7 +146,11 @@ class Searchbar: UIView, UITextFieldDelegate {
         btnRight.isHidden = !hasInput
         switchLeftBtn(isSearching)
     }
-    
+    /**
+     Change the left button state and animate the button icon.
+     
+     - Parameter isSearching: The flag to indicate that if the search bar is in searching state.
+     */
     private func switchLeftBtn(_ isSearching: Bool) {
         guard btnLeft.tag != (isSearching ? 1 : 0) else { return }
         btnLeft.tag = isSearching ? 1 : 0
