@@ -25,8 +25,8 @@ class Searchbar: UIView, UITextFieldDelegate {
     public var imgLeftBtn: UIImage = #imageLiteral(resourceName: "ic_search")
     // MARK: - Private properties
     private var stackView: UIStackView!
-    private var onTapLeft: BtnAction?
-    private var onTapRight: BtnAction?
+    private var onStartSearch: ((Bool) -> Void)?
+    private var onClearInput: BtnAction?
     private var startSearch: DispatchWorkItem?
     private let animHplr = AnimHelper.shared
     // Init
@@ -44,12 +44,12 @@ class Searchbar: UIView, UITextFieldDelegate {
      - Parameter onTapRight:
      - Parameter delegate:
      */
-    public convenience init(onTapLeft: BtnAction?, onTapRight: BtnAction?, delegate: SearchbarDelegate) {
+    public convenience init(onStartSearch: ((Bool) -> Void)?, onClearInput: BtnAction?, delegate: SearchbarDelegate) {
         // We use zero here since the size of the view is handled by AutoLayout.
         self.init(frame: .zero)
         self.delegate = delegate
-        self.onTapLeft = onTapLeft
-        self.onTapRight = onTapRight
+        self.onStartSearch = onStartSearch
+        self.onClearInput = onClearInput
     }
     /**
      Init UI.
@@ -62,7 +62,7 @@ class Searchbar: UIView, UITextFieldDelegate {
         self.layer.cornerRadius = cornerRadius
         self.clipsToBounds = true
         // Set up textField
-        textInput = MaterialTextField(hint: searchbarHint, textColor: foregroundColor, font: Font.regular(16.0), bgColor: self.backgroundColor ?? .white, delegate: self)
+        textInput = MaterialTextField(hint: searchbarHint, textColor: foregroundColor, font: ResManager.Font.regular(16.0), bgColor: self.backgroundColor ?? .white, delegate: self)
         textInput.autocorrectionType = .no
         textInput.returnKeyType = .search
         textInput.enablesReturnKeyAutomatically = true
@@ -70,8 +70,7 @@ class Searchbar: UIView, UITextFieldDelegate {
         btnLeft = MaterialButton(icon: imgLeftBtn.colored(foregroundColor), bgColor: self.backgroundColor ?? .white)
         btnRight = MaterialButton(icon: #imageLiteral(resourceName: "ic_clear").colored(foregroundColor), bgColor: self.backgroundColor ?? .white)
         stackView = UIStackView(arrangedSubviews: [btnLeft, textInput, btnRight], axis: .horizontal, distribution: .fillProportionally, spacing: 0.0)
-        self.addSubview(stackView)
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubViews([stackView])
         setBtnStates(hasInput: false, isSearching: false)
     }
     
@@ -88,19 +87,17 @@ class Searchbar: UIView, UITextFieldDelegate {
     @objc private func tapLeftBtn() {
         if textInput.isFirstResponder {
             textInput.resignFirstResponder()
+            onStartSearch?(false)
         } else {
             textInput.becomeFirstResponder()
+            onStartSearch?(true)
         }
-        onTapLeft?()
     }
     
     @objc private func tapRightBtn() {
-        if let text = textInput.text, text.count > 0 {
-            textInput.text = ""
-            btnRight.isHidden = true
-        } else {
-            onTapRight?()
-        }
+        textInput.text = ""
+        btnRight.isHidden = true
+        onClearInput?()
     }
     // MARK: UITextFieldDelegate
     @objc private func textFieldDidChange(_ textField: UITextField) {
