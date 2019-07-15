@@ -43,13 +43,13 @@
 		30037FC122DA9991007A814D /* MaterialTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTableViewCell.swift; sourceTree = "<group>"; };
 		30037FC322DBAC4B007A814D /* ResManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResManager.swift; sourceTree = "<group>"; };
 		3046BDA022D8496700441F5C /* WidgetExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtensions.swift; sourceTree = "<group>"; };
-		30A8B2EC22D7E34B005832A1 /* MaterialDesignSearchbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialDesignSearchbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30A8B2EC22D7E34B005832A1 /* MaterialDesignSearchUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialDesignSearchUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A8B2EF22D7E34B005832A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30A8B2F122D7E34B005832A1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		30A8B2F622D7E34C005832A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30A8B2F922D7E34C005832A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30A8B2FB22D7E34C005832A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30A8B30022D7E34C005832A1 /* MaterialDesignSearchbarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialDesignSearchbarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30A8B30022D7E34C005832A1 /* MaterialDesignSearchUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialDesignSearchUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A8B30422D7E34C005832A1 /* MaterialDesignSearchbarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialDesignSearchbarUITests.swift; sourceTree = "<group>"; };
 		30A8B30622D7E34C005832A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30A8B31222D7E442005832A1 /* Searchbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searchbar.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		30A8B2E322D7E34B005832A1 = {
 			isa = PBXGroup;
 			children = (
-				30A8B2EE22D7E34B005832A1 /* MaterialDesignSearchbar */,
+				30A8B2EE22D7E34B005832A1 /* MaterialDesignSearchUI */,
 				30A8B30322D7E34C005832A1 /* MaterialDesignSearchbarUITests */,
 				30A8B2ED22D7E34B005832A1 /* Products */,
 			);
@@ -92,13 +92,13 @@
 		30A8B2ED22D7E34B005832A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30A8B2EC22D7E34B005832A1 /* MaterialDesignSearchbar.app */,
-				30A8B30022D7E34C005832A1 /* MaterialDesignSearchbarUITests.xctest */,
+				30A8B2EC22D7E34B005832A1 /* MaterialDesignSearchUI.app */,
+				30A8B30022D7E34C005832A1 /* MaterialDesignSearchUIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		30A8B2EE22D7E34B005832A1 /* MaterialDesignSearchbar */ = {
+		30A8B2EE22D7E34B005832A1 /* MaterialDesignSearchUI */ = {
 			isa = PBXGroup;
 			children = (
 				30A8B31E22D7F7A9005832A1 /* WidgetSource */,
@@ -108,7 +108,7 @@
 				30A8B31422D7EDC6005832A1 /* Resources */,
 				30A8B2FB22D7E34C005832A1 /* Info.plist */,
 			);
-			path = MaterialDesignSearchbar;
+			path = MaterialDesignSearchUI;
 			sourceTree = "<group>";
 		};
 		30A8B30322D7E34C005832A1 /* MaterialDesignSearchbarUITests */ = {
@@ -167,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		30A8B2EB22D7E34B005832A1 /* MaterialDesignSearchbar */ = {
+		30A8B2EB22D7E34B005832A1 /* MaterialDesignSearchUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30A8B30922D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchbar" */;
+			buildConfigurationList = 30A8B30922D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchUI" */;
 			buildPhases = (
 				30A8B2E822D7E34B005832A1 /* Sources */,
 				30A8B2E922D7E34B005832A1 /* Frameworks */,
@@ -179,14 +179,14 @@
 			);
 			dependencies = (
 			);
-			name = MaterialDesignSearchbar;
+			name = MaterialDesignSearchUI;
 			productName = MaterialDesignSearchbar;
-			productReference = 30A8B2EC22D7E34B005832A1 /* MaterialDesignSearchbar.app */;
+			productReference = 30A8B2EC22D7E34B005832A1 /* MaterialDesignSearchUI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		30A8B2FF22D7E34C005832A1 /* MaterialDesignSearchbarUITests */ = {
+		30A8B2FF22D7E34C005832A1 /* MaterialDesignSearchUIUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30A8B30C22D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchbarUITests" */;
+			buildConfigurationList = 30A8B30C22D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchUIUITests" */;
 			buildPhases = (
 				30A8B2FC22D7E34C005832A1 /* Sources */,
 				30A8B2FD22D7E34C005832A1 /* Frameworks */,
@@ -197,9 +197,9 @@
 			dependencies = (
 				30A8B30222D7E34C005832A1 /* PBXTargetDependency */,
 			);
-			name = MaterialDesignSearchbarUITests;
+			name = MaterialDesignSearchUIUITests;
 			productName = MaterialDesignSearchbarUITests;
-			productReference = 30A8B30022D7E34C005832A1 /* MaterialDesignSearchbarUITests.xctest */;
+			productReference = 30A8B30022D7E34C005832A1 /* MaterialDesignSearchUIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -226,7 +226,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 30A8B2E722D7E34B005832A1 /* Build configuration list for PBXProject "MaterialDesignSearchbar" */;
+			buildConfigurationList = 30A8B2E722D7E34B005832A1 /* Build configuration list for PBXProject "MaterialDesignSearchUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -239,8 +239,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30A8B2EB22D7E34B005832A1 /* MaterialDesignSearchbar */,
-				30A8B2FF22D7E34C005832A1 /* MaterialDesignSearchbarUITests */,
+				30A8B2EB22D7E34B005832A1 /* MaterialDesignSearchUI */,
+				30A8B2FF22D7E34C005832A1 /* MaterialDesignSearchUIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,7 +300,7 @@
 /* Begin PBXTargetDependency section */
 		30A8B30222D7E34C005832A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 30A8B2EB22D7E34B005832A1 /* MaterialDesignSearchbar */;
+			target = 30A8B2EB22D7E34B005832A1 /* MaterialDesignSearchUI */;
 			targetProxy = 30A8B30122D7E34C005832A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -439,12 +439,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 588Y89GTAL;
-				INFOPLIST_FILE = MaterialDesignSearchbar/Info.plist;
+				INFOPLIST_FILE = MaterialDesignSearchUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.michaelho.MaterialDesignSearchbar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelho.MaterialDesignSearchUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,12 +457,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 588Y89GTAL;
-				INFOPLIST_FILE = MaterialDesignSearchbar/Info.plist;
+				INFOPLIST_FILE = MaterialDesignSearchUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.michaelho.MaterialDesignSearchbar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelho.MaterialDesignSearchUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,7 +510,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30A8B2E722D7E34B005832A1 /* Build configuration list for PBXProject "MaterialDesignSearchbar" */ = {
+		30A8B2E722D7E34B005832A1 /* Build configuration list for PBXProject "MaterialDesignSearchUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30A8B30722D7E34C005832A1 /* Debug */,
@@ -519,7 +519,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30A8B30922D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchbar" */ = {
+		30A8B30922D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30A8B30A22D7E34C005832A1 /* Debug */,
@@ -528,7 +528,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30A8B30C22D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchbarUITests" */ = {
+		30A8B30C22D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchUIUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30A8B30D22D7E34C005832A1 /* Debug */,
