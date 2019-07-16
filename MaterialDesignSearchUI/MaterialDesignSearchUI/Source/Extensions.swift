@@ -42,7 +42,7 @@ extension UIImage {
         return self
     }
 }
-
+// MARK: - UIStackView
 extension UIStackView {
     /**
      Convenient initializer.

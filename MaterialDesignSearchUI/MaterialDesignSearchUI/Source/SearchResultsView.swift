@@ -49,7 +49,9 @@ class SearchResultsView: UIView {
     private var cellId = "ResultCell"
     // MARK: - Public properties
     public var rowHeight: CGFloat = 60.0
-    
+    /**
+     The current state of the tableView. Reload the tableView every time the state is changed.
+     */
     var state = State.loading {
         didSet {
             DispatchQueue.main.async { [weak self] in
@@ -151,8 +153,8 @@ class SearchResultsView: UIView {
         super.init(coder: aDecoder)
     }
 }
-
-extension SearchResultsView: UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
+// MARK: - UITableViewDataSource, UITableViewDelegate
+extension SearchResultsView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return min(state.placemarks.count, 10)
@@ -195,6 +197,11 @@ class ResultCell: MaterialTableViewCell {
         leftStack.alignment = .center
         self.addSubViews([leftStack, rightStack])
     }
+    /**
+     Set the content of the cell.
+     
+     - Parameter currentPlacemark: The data object that contains the data to be displayed.
+     */
     func configure(_ currentPlacemark: CLPlacemark) {
         self.placemark = currentPlacemark
         title.text = currentPlacemark.name
