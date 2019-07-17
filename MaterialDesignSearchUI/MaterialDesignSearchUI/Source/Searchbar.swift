@@ -85,8 +85,9 @@ class Searchbar: UIView, UITextFieldDelegate {
     }
     
     @objc private func tapLeftBtn() {
-        if textInput.isFirstResponder {
-            textInput.resignFirstResponder()
+        if btnLeft.tag == 1 {
+            textInput.text = ""
+            textFieldDidEndEditing(textInput)
             onStartSearch?(false)
         } else {
             textInput.becomeFirstResponder()

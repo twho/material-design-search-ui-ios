@@ -49,23 +49,19 @@ class MainViewController: UIViewController {
         )
         // Configure searchResultsView
         searchResultsView = SearchResultsView(didSelectAction: { [weak self] (placemark) in
-            guard let self = self, let loc = placemark.location else { return }
-            // Set search bar
-            self.searchbar.textInput.text = placemark.name
-            self.searchbar.textFieldDidEndEditing(self.searchbar.textInput)
-            // Dismiss search results view
-            self.showSearchResultsView(false)
-            // Add annotation
-            let annotation = MKPointAnnotation()
-            annotation.title = placemark.name
-            annotation.coordinate = loc.coordinate
-            self.mapView.showAnnotations([annotation], animated: true)
+            guard let self = self else { return }
+            self.didSelectPlacemark(placemark)
         })
         showSearchResultsView(false)
         // Set up mapView
         mapView = MKMapView()
         mapView.delegate = self
-        btnLocate = MaterialButton(icon: #imageLiteral(resourceName: "ic_locate").colored(.darkGray), bgColor: .white, cornerRadius: 0.15*dim.width/2, withShadow: true)
+        btnLocate = MaterialButton(
+            icon: #imageLiteral(resourceName: "ic_locate").colored(.darkGray),
+            bgColor: .white,
+            cornerRadius: 0.15*dim.width/2,
+            withShadow: true
+        )
         self.view.addSubViews([mapView, btnLocate, maskView, searchResultsView, searchbar])
     }
     
@@ -76,6 +72,20 @@ class MainViewController: UIViewController {
     
     @objc private func tapLocate() {
         mapView.setUserTrackingMode(.follow, animated: true)
+    }
+    
+    private func didSelectPlacemark(_ placemark: CLPlacemark) {
+        guard let loc = placemark.location else { return }
+        // Set search bar
+        self.searchbar.textInput.text = placemark.name
+        self.searchbar.textFieldDidEndEditing(self.searchbar.textInput)
+        // Dismiss search results view
+        self.showSearchResultsView(false)
+        // Add annotation
+        let annotation = MKPointAnnotation()
+        annotation.title = placemark.name
+        annotation.coordinate = loc.coordinate
+        self.mapView.showAnnotations([annotation], animated: true)
     }
     
     private func showSearchResultsView(_ show: Bool) {
@@ -152,15 +162,19 @@ extension MainViewController: SearchbarDelegate {
     
     func searchbarTextShouldReturn(_ textField: UITextField) -> Bool {
         guard let keyword = isTextInputValid(textField) else { return false }
-        searchLocations(keyword)
+        searchLocations(keyword, completion: { [weak self] (placemarks, error) in
+            guard let self = self, let first = placemarks.first else { return }
+            self.didSelectPlacemark(first)
+        })
         return true
     }
     /**
      Search locations by keyword entered in search bar.
      
-     - Parameter keyword: The keyword as the input to search locations.
+     - Parameter keyword:    The keyword as the input to search locations.
+     - Parameter completion: The completion handler after showing search results.
      */
-    private func searchLocations(_ keyword: String) {
+    private func searchLocations(_ keyword: String, completion: (([CLPlacemark], Error?) -> Void)? = nil) {
         DispatchQueue.global(qos: .userInteractive).async { [weak self] in
             guard let self = self else { return }
             let request = MKLocalSearch.Request()
@@ -176,6 +190,7 @@ extension MainViewController: SearchbarDelegate {
                 }
                 DispatchQueue.main.async {
                     self.searchResultsView.update(newPlacemarks: placemarks, error: error)
+                    completion?(placemarks, error)
                 }
             }
         }

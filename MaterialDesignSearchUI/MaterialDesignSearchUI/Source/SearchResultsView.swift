@@ -165,7 +165,7 @@ class SearchResultsView: UIView {
     }
 }
 // MARK: - UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate
-extension SearchResultsView: UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
+extension SearchResultsView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return min(state.placemarks.count, 10)
