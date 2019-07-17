@@ -47,8 +47,10 @@ class SearchResultsView: UIView {
     private var errorLabel: UILabel!
     // MARK: - Private properties
     private var cellId = "ResultCell"
+    private var didSelectAction: DidSelectLocation?
     // MARK: - Public properties
     public var rowHeight: CGFloat = 60.0
+    public var isScrolling = false
     /**
      The current state of the tableView. Reload the tableView every time the state is changed.
      */
@@ -68,6 +70,15 @@ class SearchResultsView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         initUI()
+    }
+    /**
+     Convenience initializer for app use.
+     
+     - Parameter didSelectAction: Handle when user select an item in the search results view.
+     */
+    convenience init(didSelectAction: DidSelectLocation) {
+        self.init()
+        self.didSelectAction = didSelectAction
     }
     /**
      Init UI.
@@ -153,8 +164,8 @@ class SearchResultsView: UIView {
         super.init(coder: aDecoder)
     }
 }
-// MARK: - UITableViewDataSource, UITableViewDelegate
-extension SearchResultsView: UITableViewDataSource, UITableViewDelegate {
+// MARK: - UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate
+extension SearchResultsView: UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return min(state.placemarks.count, 10)
@@ -167,9 +178,24 @@ extension SearchResultsView: UITableViewDataSource, UITableViewDelegate {
         cell.configure(state.placemarks[indexPath.row])
         return cell
     }
+    // didSelectRowAt
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let onSelect = self.didSelectAction, indexPath.row < state.placemarks.count {
+            onSelect!(state.placemarks[indexPath.row])
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return rowHeight
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        isScrolling = true
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        isScrolling = false
     }
 }
 
@@ -181,8 +207,6 @@ class ResultCell: MaterialTableViewCell {
     private var subTitle: UILabel!
     private var rightStack: UIStackView!
     private var leftStack: UIStackView!
-    // MARK: - Public properties
-    public var placemark: CLPlacemark?
     // Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -203,10 +227,9 @@ class ResultCell: MaterialTableViewCell {
      - Parameter currentPlacemark: The data object that contains the data to be displayed.
      */
     func configure(_ currentPlacemark: CLPlacemark) {
-        self.placemark = currentPlacemark
         title.text = currentPlacemark.name
         subTitle.text = parseAddress(currentPlacemark)
-        // Will be used in final application
+        // Will be used in until point of interest category information is released in iOS 13
         // icon.image = ResManager.placemarkIcon(currentPlacemark.areasOfInterest).colored(.gray)
         guard
             let userLoc = appDelegate.latestLocation,
@@ -263,16 +286,10 @@ class ResultCell: MaterialTableViewCell {
             NSLayoutConstraint(item: rightStack as Any, attribute: .left,
                                relatedBy: .equal,
                                toItem: leftStack, attribute: .right,
-                               multiplier: 1.0, constant: 0.03*self.frame.width),
-            NSLayoutConstraint(item: leftStack as Any, attribute: .width,
-                               relatedBy: .equal,
-                               toItem: self, attribute: .height,
-                               multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: icon as Any, attribute: .width,
-                               relatedBy: .equal,
-                               toItem: self, attribute: .height,
-                               multiplier: 0.4, constant: 0.0)
+                               multiplier: 1.0, constant: 0.03*self.frame.width)
             ])
+        leftStack.setWidthConstraint(self.frame.height)
+        icon.setWidthConstraint(0.4*self.frame.height)
         self.layoutIfNeeded()
     }
     // Required init

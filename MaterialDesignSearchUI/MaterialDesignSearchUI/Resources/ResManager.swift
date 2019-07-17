@@ -22,7 +22,11 @@ class ResManager {
             UIFont(name: "Roboto-Regular", size: size) ?? UIFont.systemFont(ofSize: size)
         }
     }
-    
+    /**
+     Placemark icons. Note that this will not be used until iOS 13.
+     
+     - Parameter poi: The point of interest as the input to render specific image.
+     */
     static let placemarkIcon = { (poi: [String]?) -> UIImage in
         guard let poi = poi, poi.count > 0 else { return #imageLiteral(resourceName: "ic_destination") }
         switch poi {

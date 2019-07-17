@@ -120,7 +120,6 @@ class Searchbar: UIView, UITextFieldDelegate {
     // textFieldDidEndEditing
     func textFieldDidEndEditing(_ textField: UITextField) {
         textField.text = textField.text?.trimmingCharacters(in: .whitespaces).count == 0 ? "" : textField.text
-        setBtnStates(hasInput: textField.text?.count != 0, isSearching: false)
         delegate?.textFieldDidEndEditing(textField)
     }
     // textFieldShouldReturn

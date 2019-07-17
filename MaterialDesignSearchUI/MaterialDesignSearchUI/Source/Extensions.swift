@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreLocation
 
 public typealias BtnAction = (() -> Void)
+public typealias DidSelectLocation = ((CLPlacemark) -> Void)?
 
 // MARK: - UIImage
 extension UIImage {
@@ -86,6 +88,26 @@ extension MaterialButton {
 // MARK: - UIView
 extension UIView {
     /**
+     The getter of the height constraint of the view.
+     */
+    var heightConstraint: NSLayoutConstraint? {
+        get {
+            return constraints.first(where: {
+                $0.firstAttribute == .height && $0.relation == .equal
+            })
+        }
+    }
+    /**
+     The getter of the width constraint of the view.
+     */
+    var widthConstraint: NSLayoutConstraint? {
+        get {
+            return constraints.first(where: {
+                $0.firstAttribute == .width && $0.relation == .equal
+            })
+        }
+    }
+    /**
      Make the specified view (in parameter) to be centered of current view.
      
      - Parameter view: The view to be positioned to the center of current view.
@@ -160,6 +182,28 @@ extension UIView {
                                    multiplier: 1.0, constant: rConst)
             )
         }
+    }
+    /**
+     The setter of the height constraint of the view.
+     
+     - Parameter height: The height as constant in CGFloat to set to layout constraint.
+     */
+    public func setHeightConstraint(_ height: CGFloat) {
+        if self.heightConstraint != nil {
+            self.heightConstraint?.isActive = false
+        }
+        NSLayoutConstraint(item: self, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: height).isActive = true
+    }
+    /**
+     The setter of the width constraint of the view.
+     
+     - Parameter width: The width as constant in CGFloat to set to layout constraint.
+     */
+    public func setWidthConstraint(_ width: CGFloat) {
+        if self.widthConstraint != nil {
+            self.widthConstraint?.isActive = false
+        }
+        NSLayoutConstraint(item: self, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: width).isActive = true
     }
 }
 // MARK: - UILabel
