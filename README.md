@@ -67,7 +67,7 @@ searchResultsView = SearchResultsView(didSelectAction: {
     // Your implementation
 })
 ```
-### Load data into results view
+#### Load data into results view
 ```swift
 searchResultsView.update(newPlacemarks: placemarks, error: error)
 ```
