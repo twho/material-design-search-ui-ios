@@ -67,6 +67,8 @@ searchResultsView = SearchResultsView(didSelectAction: {
     // Your implementation
 })
 ```
+<img src="gif/searchresultsview.gif" alt="button" width="400"/>
+
 #### Load data into results view
 ```swift
 searchResultsView.update(newPlacemarks: placemarks, error: error)
