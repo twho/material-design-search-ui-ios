@@ -5,7 +5,7 @@ Material design styled search UI consists of search bar and search results view.
 
 <img src="gif/finalapp.gif" alt="overview" width="250"/>
 
-You may see the following [Medium](https://medium.com/) articles for how detailed explanation of developing these UI widgets.
+You may see the following [Medium](https://medium.com/) articles for detailed explanation of developing these UI widgets.
 
 - [Create Material Design Search Bar in iOS — Search UI Part 1/3](https://medium.com/swlh/create-material-design-search-bar-in-ios-search-ui-part-1-3-dfb905de6b01)
 - [Create Material Design Search Results View in iOS — Search UI Part 2/3](https://medium.com/swlh/create-material-design-search-results-view-in-ios-search-ui-part-2-3-21c43f0617c)
@@ -67,7 +67,9 @@ searchResultsView = SearchResultsView(didSelectAction: {
     // Your implementation
 })
 ```
-### Load data into results view
+<img src="gif/searchresultsview.gif" alt="button" width="400"/>
+
+#### Load data into results view
 ```swift
 searchResultsView.update(newPlacemarks: placemarks, error: error)
 ```
