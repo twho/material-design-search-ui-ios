@@ -16,8 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var latestLocation: CLLocation?
     var locationMgr = CLLocationManager()
+    var uiStyle: SearchUserInterfaceStyle = .light
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Set global state for userInterfaceStyle
+        if #available(iOS 13.0, *), UITraitCollection.current.userInterfaceStyle == .dark {
+            uiStyle = .dark
+        }
         window = UIWindow(frame: UIScreen.main.bounds)
         let mainView = MainViewController()
         self.window!.rootViewController = mainView
@@ -43,4 +48,9 @@ extension AppDelegate: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("\(self.LOGTAG) didFailWithError \(error)")
     }
+}
+
+enum SearchUserInterfaceStyle {
+    case light
+    case dark
 }

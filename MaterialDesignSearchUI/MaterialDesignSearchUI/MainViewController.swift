@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
     private var btnLocate: MaterialButton!
     // MARK: - Private properties
     private var dim: CGSize = .zero
+    private var foregroundColor = UIColor.darkGray
     private let animHplr = AnimHelper.shared
     // viewDidLoad
     override func viewDidLoad() {
@@ -33,7 +34,7 @@ class MainViewController: UIViewController {
     private func initUI() {
         self.view.backgroundColor = ResManager.Colors.sand
         maskView = UIView()
-        maskView.backgroundColor = .white
+        maskView.backgroundColor = self.appDelegate.uiStyle == .light ? .white : .darkGray
         // Configure searchbar
         searchbar = Searchbar(
             onStartSearch: { [weak self] (isSearching) in
@@ -57,10 +58,10 @@ class MainViewController: UIViewController {
         mapView = MKMapView()
         mapView.delegate = self
         btnLocate = MaterialButton(
-            icon: #imageLiteral(resourceName: "ic_locate").colored(.darkGray),
-            bgColor: .white,
+            icon: #imageLiteral(resourceName: "ic_locate").colored( self.appDelegate.uiStyle == .light ? .darkGray : .white),
+            bgColor: self.appDelegate.uiStyle == .light ? .white : .darkGray,
             cornerRadius: 0.15*dim.width/2,
-            withShadow: true
+            withShadow: self.appDelegate.uiStyle == .light
         )
         self.view.addSubViews([mapView, btnLocate, maskView, searchResultsView, searchbar])
     }

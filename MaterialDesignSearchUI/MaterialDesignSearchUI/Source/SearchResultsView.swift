@@ -123,6 +123,7 @@ class SearchResultsView: UIView {
         tableView.register(ResultCell.self, forCellReuseIdentifier: cellId)
         tableView.isUserInteractionEnabled = true
         tableView.canCancelContentTouches = false
+        tableView.backgroundColor = self.appDelegate.uiStyle == .light ? .white : .darkGray
         self.addSubViews([tableView])
     }
     /**
@@ -207,14 +208,19 @@ class ResultCell: MaterialTableViewCell {
     private var subTitle: UILabel!
     private var rightStack: UIStackView!
     private var leftStack: UIStackView!
+    public var foregroundColor: UIColor = .darkGray
     // Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        // Set up colors to respond dark mode
+        self.backgroundColor = appDelegate.uiStyle == .light ? .white : .darkGray
         setCornerBorder()
-        icon = UIImageView(image: #imageLiteral(resourceName: "ic_location").colored(.gray))
-        title = UILabel(title: "", size: 16.0, color: .gray, lines: 1, aligment: .left)
-        subTitle = UILabel(title: "", size: 14.0, color: .gray, lines: 1, aligment: .left)
-        caption = UILabel(title: "", size: 12.0, color: .gray, lines: 1, aligment: .left)
+        foregroundColor = appDelegate.uiStyle == .light ? .gray : .white
+        // Set up UI
+        icon = UIImageView(image: #imageLiteral(resourceName: "ic_location").colored(foregroundColor))
+        title = UILabel(title: "", size: 16.0, color: foregroundColor, lines: 1, aligment: .left)
+        subTitle = UILabel(title: "", size: 14.0, color: foregroundColor, lines: 1, aligment: .left)
+        caption = UILabel(title: "", size: 12.0, color: foregroundColor, lines: 1, aligment: .left)
         caption.adjustsFontSizeToFitWidth = true
         rightStack = UIStackView(arrangedSubviews: [title, subTitle], axis: .vertical, distribution: .fillProportionally, spacing: 0.0)
         leftStack = UIStackView(arrangedSubviews: [icon, caption], axis: .vertical, distribution: .fillProportionally, spacing: 0.0)

@@ -55,7 +55,8 @@ class Searchbar: UIView, UITextFieldDelegate {
      Init UI.
      */
     private func initUI() {
-        self.backgroundColor = .white
+        self.backgroundColor = self.appDelegate.uiStyle == .light ? .white : .darkGray
+        foregroundColor = self.appDelegate.uiStyle == .light ? .darkGray : .white
         // Set corner border
         self.layer.borderColor = borderColor.cgColor
         self.layer.borderWidth = borderWidth
@@ -151,7 +152,7 @@ class Searchbar: UIView, UITextFieldDelegate {
     private func switchLeftBtn(_ isSearching: Bool) {
         guard btnLeft.tag != (isSearching ? 1 : 0) else { return }
         btnLeft.tag = isSearching ? 1 : 0
-        btnLeft.setImage(isSearching ? #imageLiteral(resourceName: "ic_back").colored(.darkGray)! : imgLeftBtn.colored(.darkGray)!)
+        btnLeft.setImage(isSearching ? #imageLiteral(resourceName: "ic_back").colored(foregroundColor)! : imgLeftBtn.colored(foregroundColor)!)
         isSearching
             ? animHplr.moveUpViews([btnLeft], show: true) : animHplr.moveDownViews([btnLeft], show: true)
         if !isSearching {
