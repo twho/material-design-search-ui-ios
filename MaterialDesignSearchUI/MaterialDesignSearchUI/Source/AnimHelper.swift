@@ -31,10 +31,10 @@ class AnimHelper {
                        initialSpringVelocity: 0.15,
                        options: .curveEaseOut,
                        animations: { () -> Void in
-                        views.forEach({
+                        views.forEach {
                             $0.transform = CGAffineTransform.identity
                             $0.alpha = show ? 1.0 : 0.0
-                        })
+                        }
         }, completion: completion)
     }
     /**
@@ -53,15 +53,15 @@ class AnimHelper {
         })
         UIView.animate(withDuration: duration,
                        delay: 0,
-                       usingSpringWithDamping: 0.8,
-                       initialSpringVelocity: 0.1,
+                       usingSpringWithDamping: 0.9,
+                       initialSpringVelocity: 0.15,
                        options: .curveEaseOut,
                        animations: { () -> Void in
-                        views.forEach({
+                        views.forEach {
                             let destY = toY == nil ? $0.frame.height : toY!
                             $0.transform = show ? .identity : CGAffineTransform(translationX: 0, y: destY)
                             $0.alpha = show ? 1.0 : 0.0
-                        })
+                        }
         }, completion: completion)
     }
 }
