@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
     private func initUI() {
         self.view.backgroundColor = ResManager.Colors.sand
         maskView = UIView()
-        maskView.backgroundColor = self.appDelegate.uiStyle == .light ? .white : .darkGray
+        maskView.backgroundColor = self.appDelegate.uiStyle == .dark ? .darkGray : .white
         // Configure searchbar
         searchbar = Searchbar(
             onStartSearch: { [weak self] (isSearching) in
@@ -58,10 +58,10 @@ class MainViewController: UIViewController {
         mapView = MKMapView()
         mapView.delegate = self
         btnLocate = MaterialButton(
-            icon: #imageLiteral(resourceName: "ic_locate").colored( self.appDelegate.uiStyle == .light ? .darkGray : .white),
-            bgColor: self.appDelegate.uiStyle == .light ? .white : .darkGray,
+            icon: #imageLiteral(resourceName: "ic_locate").colored( self.appDelegate.uiStyle == .dark ? .white : .darkGray),
+            bgColor: self.appDelegate.uiStyle == .dark ? .darkGray : .white,
             cornerRadius: 0.15*dim.width/2,
-            withShadow: self.appDelegate.uiStyle == .light
+            withShadow: true
         )
         self.view.addSubViews([mapView, btnLocate, maskView, searchResultsView, searchbar])
     }
@@ -152,6 +152,8 @@ extension MainViewController: SearchbarDelegate {
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
+        // clear the previous search results
+        self.searchResultsView.state = .populated([])
         showSearchResultsView(true)
     }
     

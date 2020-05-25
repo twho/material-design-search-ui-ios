@@ -55,8 +55,8 @@ class Searchbar: UIView, UITextFieldDelegate {
      Init UI.
      */
     private func initUI() {
-        self.backgroundColor = self.appDelegate.uiStyle == .light ? .white : .darkGray
-        foregroundColor = self.appDelegate.uiStyle == .light ? .darkGray : .white
+        self.backgroundColor = self.appDelegate.uiStyle == .dark ? .darkGray : .white
+        foregroundColor = self.appDelegate.uiStyle == .dark ? .white : .darkGray
         // Set corner border
         self.layer.borderColor = borderColor.cgColor
         self.layer.borderWidth = borderWidth

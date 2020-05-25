@@ -170,7 +170,7 @@ open class MaterialButton: UIButton {
         shadowLayer = UIView(frame: self.frame)
         
         guard let shadowLayer = shadowLayer else { return }
-        shadowLayer.setAsShadow(bounds: bounds, cornerRadius: self.cornerRadius)
+        shadowLayer.setAsShadow(bounds: bounds, cornerRadius: self.cornerRadius, color: self.appDelegate.uiStyle == .dark ? .black : .lightGray)
         self.superview?.insertSubview(shadowLayer, belowSubview: self)
     }
     

@@ -123,7 +123,7 @@ class SearchResultsView: UIView {
         tableView.register(ResultCell.self, forCellReuseIdentifier: cellId)
         tableView.isUserInteractionEnabled = true
         tableView.canCancelContentTouches = false
-        tableView.backgroundColor = self.appDelegate.uiStyle == .light ? .white : .darkGray
+        tableView.backgroundColor = self.appDelegate.uiStyle == .dark ? .darkGray : .white
         self.addSubViews([tableView])
     }
     /**
