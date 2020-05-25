@@ -6,7 +6,7 @@
 //  Copyright © 2019 Ho, Tsungwei. All rights reserved.
 //
 
-import UIKit
+import MaterialDesignWidgets
 
 class Searchbar: UIView, UITextFieldDelegate {
     // MARK: - UI widgets

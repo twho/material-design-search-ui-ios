@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import MaterialDesignWidgets
 
 public typealias BtnAction = (() -> Void)
 public typealias DidSelectLocation = ((CLPlacemark) -> Void)?

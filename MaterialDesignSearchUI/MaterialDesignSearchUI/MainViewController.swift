@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import MaterialDesignWidgets
 
 class MainViewController: UIViewController {
     // MARK: - UI widgets
@@ -64,6 +65,12 @@ class MainViewController: UIViewController {
             withShadow: true
         )
         self.view.addSubViews([mapView, btnLocate, maskView, searchResultsView, searchbar])
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        if #available(iOS 13.0, *) {
+            btnLocate.backgroundColor = UITraitCollection.current.userInterfaceStyle == .dark ? .darkGray : .white
+        }
     }
     
     private func requestPermission() {
