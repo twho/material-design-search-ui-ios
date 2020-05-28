@@ -6,9 +6,9 @@ target 'MaterialDesignSearchUI' do
   use_frameworks!
 
   # Pods for MaterialDesignSearchUI
-  pod 'MaterialDesignWidgets', :path => '~/Documents/Github/material-design-widgets-lite-ios/MaterialDesignWidgets'
-  
-  target 'MaterialDesignSearchUIUITests' do
+  pod 'MaterialDesignWidgets'
+
+target 'MaterialDesignSearchUIUITests' do
     # Pods for testing
   end
 

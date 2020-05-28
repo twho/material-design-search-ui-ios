@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001BAA3FB8D09D886DFEBF4D6B6C53DB /* MaterialDesignWidgets-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C52B13CE72CFA0F92EA9673EAE2D23AF /* MaterialDesignWidgets-dummy.m */; };
+		08EFF82B9AB03616EC90C5E8A959B7C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1114E3758DFAAD79F7C0E445C84BE61B /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D4E48D5DBFD6E1B460BADE86303B99 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-dummy.m */; };
+		1B275A79D74B8BCB238D527818EE4CDD /* MaterialVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC9C1775CA1167410043A13B1E9638D /* MaterialVerticalButton.swift */; };
+		2ED1D80203459BC87B6F9DC449E2335A /* Pods-MaterialDesignSearchUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2058370C8BA15DA122CEFD3667ADFC16 /* Pods-MaterialDesignSearchUI-dummy.m */; };
+		3179CEF47B32E582B03CB6514F3C4ED2 /* MaterialSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62D4C8BDDC8067F839A74768CBBCFC2 /* MaterialSegmentedControl.swift */; };
+		351A8A672DEBA65539D2035CFE4FB89F /* Pods-MaterialDesignSearchUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D97C42152329DC8F94D3B396E9C90C /* Pods-MaterialDesignSearchUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E84DBCE38ADC5069986315CA860071F /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258D1E148C71651254CA1F09ABF4F75 /* MaterialButton.swift */; };
+		5C6B4E5BE27A4EB89C31B2A2FA960C16 /* MaterialLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE5571EEB8EC454BEAE400708FB8B2D /* MaterialLoadingIndicator.swift */; };
+		5DCAE310C24F57740FC5BE470301B311 /* RippleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73F5825E16ED9C891FA39A4C44D2EF /* RippleLayer.swift */; };
+		6F5293C7D9ABEE8E5DE422FB0B403E15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		747D504579BF07B0482BBD3BD12C1F94 /* MaterialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96377103497C2CCE4D25345609A1B627 /* MaterialTableViewCell.swift */; };
+		C844C5B2A555B894316D0D2C4A9B6EBA /* MaterialDesignWidgets-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A5C6F0D6C3C92EBD1831908E3E5DE8 /* MaterialDesignWidgets-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC9C073489FD4DC8B058EC52EDA1E699 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE538067379DD380F577B8C7DBEBEA6A /* MaterialTextField.swift */; };
+		D132B2CA6405CB65F07C007A28A85B02 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B61D73595590769C4F1036A371AAE /* Extensions.swift */; };
+		EEA3B88B5C2292CC47284F8448255839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F497A50AB9955AB7FE56B73C720F088A /* MaterialDesignWidgets.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E8B5A96082F6B621AE711068BCBCFE0 /* MaterialDesignWidgets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F564136CE70B3DD8D917B5CA68442E26 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8900A72DBAC67C8094D387D37C19B94 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B3E4CCED45934451EFBF34591A11910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8CD3613EE65140A2CD8E9AE9EADB05;
+			remoteInfo = MaterialDesignWidgets;
+		};
+		32D55C396926908D05AFE98F463BFC5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8CD3613EE65140A2CD8E9AE9EADB05;
+			remoteInfo = MaterialDesignWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03D4E48D5DBFD6E1B460BADE86303B99 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-dummy.m"; sourceTree = "<group>"; };
+		08D97C42152329DC8F94D3B396E9C90C /* Pods-MaterialDesignSearchUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MaterialDesignSearchUI-umbrella.h"; sourceTree = "<group>"; };
+		2058370C8BA15DA122CEFD3667ADFC16 /* Pods-MaterialDesignSearchUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MaterialDesignSearchUI-dummy.m"; sourceTree = "<group>"; };
+		276CAC8F506163C552B6A2A9ADEC3BE8 /* Pods-MaterialDesignSearchUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaterialDesignSearchUI-acknowledgements.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		42DADCA889B81638E4E9EF9364418DB4 /* MaterialDesignWidgets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MaterialDesignWidgets-Info.plist"; sourceTree = "<group>"; };
+		4B3B61D73595590769C4F1036A371AAE /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = MaterialDesignWidgets/MaterialDesignWidgets/Extensions.swift; sourceTree = "<group>"; };
+		4E64D1A6FE728CB5B2EF84837446503D /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		51A5C6F0D6C3C92EBD1831908E3E5DE8 /* MaterialDesignWidgets-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialDesignWidgets-umbrella.h"; sourceTree = "<group>"; };
+		53BC625D5BDAA6F7449B83173AF4CF70 /* Pods-MaterialDesignSearchUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MaterialDesignSearchUI.modulemap"; sourceTree = "<group>"; };
+		609F092F7BF7664FD682A32A4F5AE7C7 /* MaterialDesignWidgets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialDesignWidgets.debug.xcconfig; sourceTree = "<group>"; };
+		6A73F5825E16ED9C891FA39A4C44D2EF /* RippleLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RippleLayer.swift; path = MaterialDesignWidgets/MaterialDesignWidgets/RippleLayer.swift; sourceTree = "<group>"; };
+		6B3AEDACB52E8DCFFEBE00F467FB5AC1 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EB062D5F9408197168F2CB1A136B66F /* Pods_MaterialDesignSearchUI_MaterialDesignSearchUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MaterialDesignSearchUI_MaterialDesignSearchUIUITests.framework; path = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7175819B3DC9E5B327B283768BDF8B59 /* MaterialDesignWidgets-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialDesignWidgets-prefix.pch"; sourceTree = "<group>"; };
+		726A7BF6ECA2A84A63B17D14D4375F31 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.modulemap"; sourceTree = "<group>"; };
+		78ECCAD27DFC07A592B32B176A1AFDE2 /* MaterialDesignWidgets.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MaterialDesignWidgets.modulemap; sourceTree = "<group>"; };
+		7942DCF890D524D32D1BF81ABF4BFAFC /* MaterialDesignWidgets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialDesignWidgets.framework; path = MaterialDesignWidgets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8B5A96082F6B621AE711068BCBCFE0 /* MaterialDesignWidgets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialDesignWidgets.h; path = MaterialDesignWidgets/MaterialDesignWidgets/MaterialDesignWidgets.h; sourceTree = "<group>"; };
+		96377103497C2CCE4D25345609A1B627 /* MaterialTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialTableViewCell.swift; path = MaterialDesignWidgets/MaterialDesignWidgets/MaterialTableViewCell.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F01E9B743CADC28CD3DC2F1B24A16E7 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A60FB4C18F6F4D871B746F94D33D68E6 /* Pods-MaterialDesignSearchUI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MaterialDesignSearchUI-frameworks.sh"; sourceTree = "<group>"; };
+		AC8CE964E914F0B6D3297835B974A9BC /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-frameworks.sh"; sourceTree = "<group>"; };
+		BDC9C1775CA1167410043A13B1E9638D /* MaterialVerticalButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialVerticalButton.swift; path = MaterialDesignWidgets/MaterialDesignWidgets/MaterialVerticalButton.swift; sourceTree = "<group>"; };
+		BFFC23A98D8A6F2B9BF892D0E6812098 /* Pods_MaterialDesignSearchUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MaterialDesignSearchUI.framework; path = "Pods-MaterialDesignSearchUI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52B13CE72CFA0F92EA9673EAE2D23AF /* MaterialDesignWidgets-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialDesignWidgets-dummy.m"; sourceTree = "<group>"; };
+		C8900A72DBAC67C8094D387D37C19B94 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-umbrella.h"; sourceTree = "<group>"; };
+		CAE5571EEB8EC454BEAE400708FB8B2D /* MaterialLoadingIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialLoadingIndicator.swift; path = MaterialDesignWidgets/MaterialDesignWidgets/MaterialLoadingIndicator.swift; sourceTree = "<group>"; };
+		CEB9D920153F8F20ED8885F03799897B /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-Info.plist"; sourceTree = "<group>"; };
+		D62D4C8BDDC8067F839A74768CBBCFC2 /* MaterialSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialSegmentedControl.swift; path = MaterialDesignWidgets/MaterialDesignWidgets/MaterialSegmentedControl.swift; sourceTree = "<group>"; };
+		E419CB10690A49CF0616EE9812D81DA0 /* Pods-MaterialDesignSearchUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialDesignSearchUI.debug.xcconfig"; sourceTree = "<group>"; };
+		E9751C9D2ED29733D6F88B3C2EC692FD /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EDE93EA8E91686C4D03C4FC3F297273E /* MaterialDesignWidgets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialDesignWidgets.release.xcconfig; sourceTree = "<group>"; };
+		EE538067379DD380F577B8C7DBEBEA6A /* MaterialTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialTextField.swift; path = MaterialDesignWidgets/MaterialDesignWidgets/MaterialTextField.swift; sourceTree = "<group>"; };
+		F258D1E148C71651254CA1F09ABF4F75 /* MaterialButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialButton.swift; path = MaterialDesignWidgets/MaterialDesignWidgets/MaterialButton.swift; sourceTree = "<group>"; };
+		F7CE0A7E3F5CF0A8A4CF73A5F039B997 /* Pods-MaterialDesignSearchUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialDesignSearchUI.release.xcconfig"; sourceTree = "<group>"; };
+		F8607AD1517D55D93E9AFB92489E8763 /* Pods-MaterialDesignSearchUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaterialDesignSearchUI-Info.plist"; sourceTree = "<group>"; };
+		FB7A1FE8FDCE370939CDE687C66B253B /* Pods-MaterialDesignSearchUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MaterialDesignSearchUI-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83512C9C024B1FF7CBD25BC4732F621C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA3B88B5C2292CC47284F8448255839 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD85D4EF87CC365F05451B4AA4EB623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F5293C7D9ABEE8E5DE422FB0B403E15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED53126E132E39EE67A13A9C1210FC10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08EFF82B9AB03616EC90C5E8A959B7C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D705DD5F7E6927659961EC319F1897A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF3D57052FFF8DF16FE751938C614F51 /* Pods-MaterialDesignSearchUI */,
+				C087151EF3458E91DFEB2A927B85F471 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		490DF57466C5287DE9989EB2D42BFB00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E12F28A4C49FAA89A9B1ED000945B4F4 /* MaterialDesignWidgets */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		68320C4041D4591D95712F33F84FAD48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7942DCF890D524D32D1BF81ABF4BFAFC /* MaterialDesignWidgets.framework */,
+				BFFC23A98D8A6F2B9BF892D0E6812098 /* Pods_MaterialDesignSearchUI.framework */,
+				6EB062D5F9408197168F2CB1A136B66F /* Pods_MaterialDesignSearchUI_MaterialDesignSearchUIUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C087151EF3458E91DFEB2A927B85F471 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				726A7BF6ECA2A84A63B17D14D4375F31 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.modulemap */,
+				9F01E9B743CADC28CD3DC2F1B24A16E7 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-acknowledgements.markdown */,
+				4E64D1A6FE728CB5B2EF84837446503D /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-acknowledgements.plist */,
+				03D4E48D5DBFD6E1B460BADE86303B99 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-dummy.m */,
+				AC8CE964E914F0B6D3297835B974A9BC /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-frameworks.sh */,
+				CEB9D920153F8F20ED8885F03799897B /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-Info.plist */,
+				C8900A72DBAC67C8094D387D37C19B94 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-umbrella.h */,
+				6B3AEDACB52E8DCFFEBE00F467FB5AC1 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.debug.xcconfig */,
+				E9751C9D2ED29733D6F88B3C2EC692FD /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.release.xcconfig */,
+			);
+			name = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests";
+			path = "Target Support Files/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests";
+			sourceTree = "<group>";
+		};
+		C5DC411EE8A65303492DAE68F17ACF1E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				78ECCAD27DFC07A592B32B176A1AFDE2 /* MaterialDesignWidgets.modulemap */,
+				C52B13CE72CFA0F92EA9673EAE2D23AF /* MaterialDesignWidgets-dummy.m */,
+				42DADCA889B81638E4E9EF9364418DB4 /* MaterialDesignWidgets-Info.plist */,
+				7175819B3DC9E5B327B283768BDF8B59 /* MaterialDesignWidgets-prefix.pch */,
+				51A5C6F0D6C3C92EBD1831908E3E5DE8 /* MaterialDesignWidgets-umbrella.h */,
+				609F092F7BF7664FD682A32A4F5AE7C7 /* MaterialDesignWidgets.debug.xcconfig */,
+				EDE93EA8E91686C4D03C4FC3F297273E /* MaterialDesignWidgets.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MaterialDesignWidgets";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				490DF57466C5287DE9989EB2D42BFB00 /* Pods */,
+				68320C4041D4591D95712F33F84FAD48 /* Products */,
+				2D705DD5F7E6927659961EC319F1897A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E12F28A4C49FAA89A9B1ED000945B4F4 /* MaterialDesignWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				4B3B61D73595590769C4F1036A371AAE /* Extensions.swift */,
+				F258D1E148C71651254CA1F09ABF4F75 /* MaterialButton.swift */,
+				8E8B5A96082F6B621AE711068BCBCFE0 /* MaterialDesignWidgets.h */,
+				CAE5571EEB8EC454BEAE400708FB8B2D /* MaterialLoadingIndicator.swift */,
+				D62D4C8BDDC8067F839A74768CBBCFC2 /* MaterialSegmentedControl.swift */,
+				96377103497C2CCE4D25345609A1B627 /* MaterialTableViewCell.swift */,
+				EE538067379DD380F577B8C7DBEBEA6A /* MaterialTextField.swift */,
+				BDC9C1775CA1167410043A13B1E9638D /* MaterialVerticalButton.swift */,
+				6A73F5825E16ED9C891FA39A4C44D2EF /* RippleLayer.swift */,
+				C5DC411EE8A65303492DAE68F17ACF1E /* Support Files */,
+			);
+			name = MaterialDesignWidgets;
+			path = MaterialDesignWidgets;
+			sourceTree = "<group>";
+		};
+		FF3D57052FFF8DF16FE751938C614F51 /* Pods-MaterialDesignSearchUI */ = {
+			isa = PBXGroup;
+			children = (
+				53BC625D5BDAA6F7449B83173AF4CF70 /* Pods-MaterialDesignSearchUI.modulemap */,
+				FB7A1FE8FDCE370939CDE687C66B253B /* Pods-MaterialDesignSearchUI-acknowledgements.markdown */,
+				276CAC8F506163C552B6A2A9ADEC3BE8 /* Pods-MaterialDesignSearchUI-acknowledgements.plist */,
+				2058370C8BA15DA122CEFD3667ADFC16 /* Pods-MaterialDesignSearchUI-dummy.m */,
+				A60FB4C18F6F4D871B746F94D33D68E6 /* Pods-MaterialDesignSearchUI-frameworks.sh */,
+				F8607AD1517D55D93E9AFB92489E8763 /* Pods-MaterialDesignSearchUI-Info.plist */,
+				08D97C42152329DC8F94D3B396E9C90C /* Pods-MaterialDesignSearchUI-umbrella.h */,
+				E419CB10690A49CF0616EE9812D81DA0 /* Pods-MaterialDesignSearchUI.debug.xcconfig */,
+				F7CE0A7E3F5CF0A8A4CF73A5F039B997 /* Pods-MaterialDesignSearchUI.release.xcconfig */,
+			);
+			name = "Pods-MaterialDesignSearchUI";
+			path = "Target Support Files/Pods-MaterialDesignSearchUI";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9C2162DA363B6D4E15362C715B5CACD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C844C5B2A555B894316D0D2C4A9B6EBA /* MaterialDesignWidgets-umbrella.h in Headers */,
+				F497A50AB9955AB7FE56B73C720F088A /* MaterialDesignWidgets.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0FBB34048B475E073826AF792F3748 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351A8A672DEBA65539D2035CFE4FB89F /* Pods-MaterialDesignSearchUI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DA562F1B81908757EF9A40B1EBF100 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F564136CE70B3DD8D917B5CA68442E26 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		050309157DB2483238E5484C1B114E01 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D2597C76467A69575747FF545B90FB4 /* Build configuration list for PBXNativeTarget "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests" */;
+			buildPhases = (
+				C2DA562F1B81908757EF9A40B1EBF100 /* Headers */,
+				2376A85DDA575BB7B5842D13E2E1DFF1 /* Sources */,
+				9BD85D4EF87CC365F05451B4AA4EB623 /* Frameworks */,
+				D309FF86FD56DEFA72F06B54B7AB1156 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D95115420F66A5722FF95BBCE7CD2FA4 /* PBXTargetDependency */,
+			);
+			name = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests";
+			productName = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests";
+			productReference = 6EB062D5F9408197168F2CB1A136B66F /* Pods_MaterialDesignSearchUI_MaterialDesignSearchUIUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0A0A6554765A4854C3A8D79DE6CC5596 /* Pods-MaterialDesignSearchUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 181E72985A105C5CFA0860601049D37A /* Build configuration list for PBXNativeTarget "Pods-MaterialDesignSearchUI" */;
+			buildPhases = (
+				AA0FBB34048B475E073826AF792F3748 /* Headers */,
+				76CF6F47139AF8C0D04AC129CB719077 /* Sources */,
+				83512C9C024B1FF7CBD25BC4732F621C /* Frameworks */,
+				952F29F1707C4DC733E5BA3A45C3EF55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53E2C821B8D9138733EFACA598EB9108 /* PBXTargetDependency */,
+			);
+			name = "Pods-MaterialDesignSearchUI";
+			productName = "Pods-MaterialDesignSearchUI";
+			productReference = BFFC23A98D8A6F2B9BF892D0E6812098 /* Pods_MaterialDesignSearchUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1C8CD3613EE65140A2CD8E9AE9EADB05 /* MaterialDesignWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B297E78BD787694E8B48DF07B091FB6 /* Build configuration list for PBXNativeTarget "MaterialDesignWidgets" */;
+			buildPhases = (
+				9C2162DA363B6D4E15362C715B5CACD2 /* Headers */,
+				EA0D4A1CD454D85E4287B1C893856A10 /* Sources */,
+				ED53126E132E39EE67A13A9C1210FC10 /* Frameworks */,
+				F51116F9D4A31239BDAD68B95EB97C3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaterialDesignWidgets;
+			productName = MaterialDesignWidgets;
+			productReference = 7942DCF890D524D32D1BF81ABF4BFAFC /* MaterialDesignWidgets.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 68320C4041D4591D95712F33F84FAD48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C8CD3613EE65140A2CD8E9AE9EADB05 /* MaterialDesignWidgets */,
+				0A0A6554765A4854C3A8D79DE6CC5596 /* Pods-MaterialDesignSearchUI */,
+				050309157DB2483238E5484C1B114E01 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		952F29F1707C4DC733E5BA3A45C3EF55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D309FF86FD56DEFA72F06B54B7AB1156 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51116F9D4A31239BDAD68B95EB97C3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2376A85DDA575BB7B5842D13E2E1DFF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1114E3758DFAAD79F7C0E445C84BE61B /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CF6F47139AF8C0D04AC129CB719077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ED1D80203459BC87B6F9DC449E2335A /* Pods-MaterialDesignSearchUI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0D4A1CD454D85E4287B1C893856A10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D132B2CA6405CB65F07C007A28A85B02 /* Extensions.swift in Sources */,
+				3E84DBCE38ADC5069986315CA860071F /* MaterialButton.swift in Sources */,
+				001BAA3FB8D09D886DFEBF4D6B6C53DB /* MaterialDesignWidgets-dummy.m in Sources */,
+				5C6B4E5BE27A4EB89C31B2A2FA960C16 /* MaterialLoadingIndicator.swift in Sources */,
+				3179CEF47B32E582B03CB6514F3C4ED2 /* MaterialSegmentedControl.swift in Sources */,
+				747D504579BF07B0482BBD3BD12C1F94 /* MaterialTableViewCell.swift in Sources */,
+				CC9C073489FD4DC8B058EC52EDA1E699 /* MaterialTextField.swift in Sources */,
+				1B275A79D74B8BCB238D527818EE4CDD /* MaterialVerticalButton.swift in Sources */,
+				5DCAE310C24F57740FC5BE470301B311 /* RippleLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53E2C821B8D9138733EFACA598EB9108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MaterialDesignWidgets;
+			target = 1C8CD3613EE65140A2CD8E9AE9EADB05 /* MaterialDesignWidgets */;
+			targetProxy = 2B3E4CCED45934451EFBF34591A11910 /* PBXContainerItemProxy */;
+		};
+		D95115420F66A5722FF95BBCE7CD2FA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MaterialDesignWidgets;
+			target = 1C8CD3613EE65140A2CD8E9AE9EADB05 /* MaterialDesignWidgets */;
+			targetProxy = 32D55C396926908D05AFE98F463BFC5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		257497152829C177993B5EC99C1D227A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2A8449F1EE9624F994D461AC47B39AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7CE0A7E3F5CF0A8A4CF73A5F039B997 /* Pods-MaterialDesignSearchUI.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MaterialDesignSearchUI/Pods-MaterialDesignSearchUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MaterialDesignSearchUI/Pods-MaterialDesignSearchUI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4991DA6B711A96EB5F6CF6FBA96A42F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9751C9D2ED29733D6F88B3C2EC692FD /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55ED947B22F6A6F3253DE0433573C746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B3AEDACB52E8DCFFEBE00F467FB5AC1 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B1AC557D5A5EDF18B7F195866C2B928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E419CB10690A49CF0616EE9812D81DA0 /* Pods-MaterialDesignSearchUI.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MaterialDesignSearchUI/Pods-MaterialDesignSearchUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MaterialDesignSearchUI/Pods-MaterialDesignSearchUI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A29E72C6B78DD57ECF516DAB624B499C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE93EA8E91686C4D03C4FC3F297273E /* MaterialDesignWidgets.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MaterialDesignWidgets/MaterialDesignWidgets-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MaterialDesignWidgets/MaterialDesignWidgets-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MaterialDesignWidgets/MaterialDesignWidgets.modulemap";
+				PRODUCT_MODULE_NAME = MaterialDesignWidgets;
+				PRODUCT_NAME = MaterialDesignWidgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A736C7BE32E28D9D5FA0C73528BAB244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609F092F7BF7664FD682A32A4F5AE7C7 /* MaterialDesignWidgets.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MaterialDesignWidgets/MaterialDesignWidgets-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MaterialDesignWidgets/MaterialDesignWidgets-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MaterialDesignWidgets/MaterialDesignWidgets.modulemap";
+				PRODUCT_MODULE_NAME = MaterialDesignWidgets;
+				PRODUCT_NAME = MaterialDesignWidgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		181E72985A105C5CFA0860601049D37A /* Build configuration list for PBXNativeTarget "Pods-MaterialDesignSearchUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1AC557D5A5EDF18B7F195866C2B928 /* Debug */,
+				2A8449F1EE9624F994D461AC47B39AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D2597C76467A69575747FF545B90FB4 /* Build configuration list for PBXNativeTarget "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55ED947B22F6A6F3253DE0433573C746 /* Debug */,
+				4991DA6B711A96EB5F6CF6FBA96A42F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B297E78BD787694E8B48DF07B091FB6 /* Build configuration list for PBXNativeTarget "MaterialDesignWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A736C7BE32E28D9D5FA0C73528BAB244 /* Debug */,
+				A29E72C6B78DD57ECF516DAB624B499C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

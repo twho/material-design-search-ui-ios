@@ -53,6 +53,7 @@ class MainViewController: UIViewController {
         searchResultsView = SearchResultsView(didSelectAction: { [weak self] (placemark) in
             guard let self = self else { return }
             self.didSelectPlacemark(placemark)
+            self.searchbar.endEditing(true)
         })
         showSearchResultsView(false)
         // Set up mapView
@@ -86,9 +87,9 @@ class MainViewController: UIViewController {
         guard let loc = placemark.location else { return }
         // Set search bar
         self.searchbar.textInput.text = placemark.name
-        self.searchbar.textFieldDidEndEditing(self.searchbar.textInput)
+        //self.searchbar.textFieldDidEndEditing(self.searchbar.textInput)
         // Dismiss search results view
-        self.showSearchResultsView(false)
+        //self.showSearchResultsView(false)
         // Add annotation
         let annotation = MKPointAnnotation()
         annotation.title = placemark.name

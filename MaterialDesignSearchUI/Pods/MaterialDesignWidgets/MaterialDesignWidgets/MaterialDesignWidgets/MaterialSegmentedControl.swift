@@ -1,0 +1,215 @@
+//
+//  MaterialSegmentedControl.swift
+//  MaterialDesignWidgets
+//
+//  Created by Michael Ho on 04/27/20.
+//  Copyright © 2019 Michael Ho. All rights reserved.
+//
+
+import UIKit
+
+@IBDesignable
+open class MaterialSegmentedControl: UIControl {
+    
+    public var selectedSegmentIndex = 0
+    
+    var stackView: UIStackView!
+    open var selector: UIView!
+    open var segments = [UIButton]() {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat = 1.5 {
+        didSet {
+            layer.borderWidth = borderWidth
+        }
+    }
+    /**
+     The foreground color of the segment.
+     */
+    @IBInspectable public var foregroundColor: UIColor = .gray {
+        didSet {
+            updateViews()
+        }
+    }
+    /**
+     The boolean to set whether the segment control displays the original color of the icon.
+     */
+    @IBInspectable public var preserveIconColor: Bool = false {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    public enum SelectorStyle {
+        case fill
+        case outline
+        case line
+    }
+    public var selectorStyle: SelectorStyle = .line {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    @IBInspectable public var selectorColor: UIColor = .gray {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    @IBInspectable public var selectedForegroundColor: UIColor = .white {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    /**
+     Convenience initializer of MaterialSegmentedControl.
+     
+     - Parameter segments:        The segment in UIButton form.
+     - Parameter selectorStyle:   The style of the selector, fill, outline and line are supported.
+     - Parameter fgColor:         The foreground color of the non-selected segment.
+     - Parameter selectedFgColor: The foreground color of the selected segment.
+     - Parameter selectorColor:   The color of the selector.
+     - Parameter bgColor:         Background color.
+     */
+    convenience public init(segments: [UIButton] = [], selectorStyle: SelectorStyle = .line, fgColor: UIColor = .gray, selectedFgColor: UIColor = .white, selectorColor: UIColor = .gray, bgColor: UIColor = .clear) {
+        self.init(frame: .zero)
+        
+        self.segments = segments
+        self.selectorStyle = selectorStyle
+        self.foregroundColor = fgColor
+        self.selectedForegroundColor = selectedFgColor
+        self.selectorColor = selectorColor
+        self.backgroundColor = bgColor
+    }
+    
+    open func appendIconSegment(icon: UIImage? = nil, preserveIconColor: Bool = true, rippleColor: UIColor = .clear, cornerRadius: CGFloat = 12.0) {
+        self.preserveIconColor = preserveIconColor
+        let button = MaterialButton(icon: icon, bgColor: rippleColor, cornerRadius: cornerRadius)
+        button.rippleLayerAlpha = 0.15
+        self.segments.append(button)
+    }
+    
+    open func appendSegment(icon: UIImage? = nil, text: String? = nil,
+                            textColor: UIColor? = .white, font: UIFont? = nil, rippleColor: UIColor = .clear,
+                            cornerRadius: CGFloat = 12.0) {
+        let button = MaterialButton(icon: icon, text: text, textColor: textColor, bgColor: rippleColor, cornerRadius: cornerRadius)
+        button.rippleLayerAlpha = 0.15
+        self.segments.append(button)
+    }
+    
+    open func appendSegment(text: String, textColor: UIColor, bgColor: UIColor, cornerRadius: CGFloat = 12.0) {
+        self.appendSegment(icon: nil, text: text, textColor: textColor, rippleColor: bgColor, cornerRadius: cornerRadius)
+    }
+    
+    func updateViews() {
+        guard segments.count > 0 else { return }
+        
+        for idx in 0..<segments.count {
+            segments[idx].backgroundColor = .clear
+            segments[idx].addTarget(self, action: #selector(buttonTapped(button:)), for: .touchUpInside)
+            segments[idx].tag = idx
+        }
+        
+        // Create a StackView
+        stackView = UIStackView(arrangedSubviews: segments, axis: .horizontal, distribution: .fillEqually, spacing: 10.0)
+        stackView.alignment = .fill
+        
+        selector = UIView(frame: .zero)
+        if let first = segments.first {
+            selector.setCornerBorder(cornerRadius: first.layer.cornerRadius)
+        }
+        
+        switch selectorStyle {
+        case .fill, .line:
+            selector.backgroundColor = selectorColor
+        case .outline:
+            selector.setCornerBorder(color: selectorColor, borderWidth: 1.5)
+        }
+        
+        subviews.forEach { (view) in
+            view.removeFromSuperview()
+        }
+        
+        [selector, stackView].forEach { (view) in
+            guard let view = view else { return }
+            self.addSubview(view)
+            view.translatesAutoresizingMaskIntoConstraints = false
+        }
+        
+        if let firstBtn = segments.first {
+            buttonTapped(button: firstBtn)
+        }
+        
+        self.layoutSubviews()
+    }
+    // AutoLayout
+    override open func layoutSubviews() {
+        super.layoutSubviews()
+        
+        selector.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        switch selectorStyle {
+        case .fill, .outline:
+            selector.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        case .line:
+            selector.heightAnchor.constraint(equalToConstant: 3.0).isActive = true
+        }
+        
+        if let selector = selector, let first = stackView.arrangedSubviews.first {
+            self.addConstraint(NSLayoutConstraint(item: selector, attribute: .width, relatedBy: .equal, toItem: first, attribute: .width, multiplier: 1.0, constant: 0.0))
+        }
+        
+        stackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        stackView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        stackView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        
+        self.layoutIfNeeded()
+    }
+    
+    @objc func buttonTapped(button: UIButton) {
+        for (idx, btn) in segments.enumerated() {
+            let image = btn.image(for: .normal)
+            btn.setTitleColor(foregroundColor, for: .normal)
+            btn.setImage(preserveIconColor ? image : image?.colored(foregroundColor))
+            
+            if btn.tag == button.tag {
+                selectedSegmentIndex = idx
+                btn.setImage(preserveIconColor ? image : image?.colored(selectedForegroundColor))
+                btn.setTitleColor(selectorStyle == .line ? foregroundColor : selectedForegroundColor, for: .normal)
+                moveView(selector, toX: btn.frame.origin.x)
+            }
+        }
+        sendActions(for: .valueChanged)
+    }
+    /**
+     Moves the view to the right position.
+     
+     - Parameter view:       The view to be moved to new position.
+     - Parameter duration:   The duration of the animation.
+     - Parameter completion: The completion handler.
+     - Parameter toView:     The targetd view frame.
+     */
+    open func moveView(_ view: UIView, duration: Double = 0.5, completion: ((Bool) -> Void)? = nil, toX: CGFloat) {
+        view.transform = CGAffineTransform(translationX: view.frame.origin.x, y: 0.0)
+        UIView.animate(withDuration: duration,
+                       delay: 0,
+                       usingSpringWithDamping: 0.8,
+                       initialSpringVelocity: 0.1,
+                       options: .curveEaseOut,
+                       animations: { () -> Void in
+                        view.transform = CGAffineTransform(translationX: toX, y: 0.0)
+        }, completion: completion)
+    }
+}

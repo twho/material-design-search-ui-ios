@@ -1,0 +1,6 @@
+framework module MaterialDesignWidgets {
+  umbrella header "MaterialDesignWidgets-umbrella.h"
+
+  export *
+  module * { export * }
+}

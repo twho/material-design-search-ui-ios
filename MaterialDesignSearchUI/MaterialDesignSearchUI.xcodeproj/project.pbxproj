@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026571E39E8E4ED84AD1F240 /* Pods_MaterialDesignSearchUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD16F58E149F8DFA4CFC976B /* Pods_MaterialDesignSearchUI.framework */; };
 		30037FBE22D986CF007A814D /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30037FBD22D986CF007A814D /* SearchResultsView.swift */; };
 		30037FC422DBAC4B007A814D /* ResManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30037FC322DBAC4B007A814D /* ResManager.swift */; };
 		3046BD9E22D8380F00441F5C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30A8B31722D7EDF0005832A1 /* Roboto-Bold.ttf */; };
@@ -19,6 +20,7 @@
 		30A8B31322D7E442005832A1 /* Searchbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B31222D7E442005832A1 /* Searchbar.swift */; };
 		30A8B32022D7F888005832A1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B31F22D7F888005832A1 /* Extensions.swift */; };
 		30A8B32222D817B0005832A1 /* AnimHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8B32122D817B0005832A1 /* AnimHelper.swift */; };
+		781988F668DCFABF9FD8B645 /* Pods_MaterialDesignSearchUI_MaterialDesignSearchUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E65A9D15E3AD9199AF55D45 /* Pods_MaterialDesignSearchUI_MaterialDesignSearchUIUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,12 @@
 		30A8B31722D7EDF0005832A1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		30A8B31F22D7F888005832A1 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		30A8B32122D817B0005832A1 /* AnimHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimHelper.swift; sourceTree = "<group>"; };
+		3E65A9D15E3AD9199AF55D45 /* Pods_MaterialDesignSearchUI_MaterialDesignSearchUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialDesignSearchUI_MaterialDesignSearchUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D739ED88E2EA59C685004F /* Pods-MaterialDesignSearchUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialDesignSearchUI.release.xcconfig"; path = "Target Support Files/Pods-MaterialDesignSearchUI/Pods-MaterialDesignSearchUI.release.xcconfig"; sourceTree = "<group>"; };
+		A914A5FC2A415B8737CACE4E /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.release.xcconfig"; path = "Target Support Files/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B59B04A1B9DC444A2B5A28E7 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD16F58E149F8DFA4CFC976B /* Pods_MaterialDesignSearchUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialDesignSearchUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C107EF4D1C789B6E39F311 /* Pods-MaterialDesignSearchUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialDesignSearchUI.debug.xcconfig"; path = "Target Support Files/Pods-MaterialDesignSearchUI/Pods-MaterialDesignSearchUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026571E39E8E4ED84AD1F240 /* Pods_MaterialDesignSearchUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				781988F668DCFABF9FD8B645 /* Pods_MaterialDesignSearchUI_MaterialDesignSearchUIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +85,7 @@
 				30A8B30322D7E34C005832A1 /* MaterialDesignSearchbarUITests */,
 				30A8B2ED22D7E34B005832A1 /* Products */,
 				9E95DB1065D42AF7EF06F0C9 /* Pods */,
+				F95C8BE859FB64412D1621E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,8 +153,21 @@
 		9E95DB1065D42AF7EF06F0C9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				F1C107EF4D1C789B6E39F311 /* Pods-MaterialDesignSearchUI.debug.xcconfig */,
+				93D739ED88E2EA59C685004F /* Pods-MaterialDesignSearchUI.release.xcconfig */,
+				B59B04A1B9DC444A2B5A28E7 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.debug.xcconfig */,
+				A914A5FC2A415B8737CACE4E /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F95C8BE859FB64412D1621E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD16F58E149F8DFA4CFC976B /* Pods_MaterialDesignSearchUI.framework */,
+				3E65A9D15E3AD9199AF55D45 /* Pods_MaterialDesignSearchUI_MaterialDesignSearchUIUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30A8B30922D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchUI" */;
 			buildPhases = (
+				4E03F55BC659BDDA82397422 /* [CP] Check Pods Manifest.lock */,
 				30A8B2E822D7E34B005832A1 /* Sources */,
 				30A8B2E922D7E34B005832A1 /* Frameworks */,
 				30A8B2EA22D7E34B005832A1 /* Resources */,
+				609C8072B18DE3EDF0E56C16 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30A8B30C22D7E34C005832A1 /* Build configuration list for PBXNativeTarget "MaterialDesignSearchUIUITests" */;
 			buildPhases = (
+				3BC6DA4B8AC58BA22ECF9935 /* [CP] Check Pods Manifest.lock */,
 				30A8B2FC22D7E34C005832A1 /* Sources */,
 				30A8B2FD22D7E34C005832A1 /* Frameworks */,
 				30A8B2FE22D7E34C005832A1 /* Resources */,
+				19521DFDB594122631211CDB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +275,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19521DFDB594122631211CDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BC6DA4B8AC58BA22ECF9935 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E03F55BC659BDDA82397422 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaterialDesignSearchUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		609C8072B18DE3EDF0E56C16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MaterialDesignSearchUI/Pods-MaterialDesignSearchUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MaterialDesignSearchUI/Pods-MaterialDesignSearchUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MaterialDesignSearchUI/Pods-MaterialDesignSearchUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30A8B2E822D7E34B005832A1 /* Sources */ = {
@@ -411,10 +520,11 @@
 		};
 		30A8B30A22D7E34C005832A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C107EF4D1C789B6E39F311 /* Pods-MaterialDesignSearchUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5TSA83BHW6;
 				INFOPLIST_FILE = MaterialDesignSearchUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -430,10 +540,11 @@
 		};
 		30A8B30B22D7E34C005832A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D739ED88E2EA59C685004F /* Pods-MaterialDesignSearchUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5TSA83BHW6;
 				INFOPLIST_FILE = MaterialDesignSearchUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,6 +560,7 @@
 		};
 		30A8B30D22D7E34C005832A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59B04A1B9DC444A2B5A28E7 /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MaterialDesignSearchbarUITests/Info.plist;
@@ -467,6 +579,7 @@
 		};
 		30A8B30E22D7E34C005832A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A914A5FC2A415B8737CACE4E /* Pods-MaterialDesignSearchUI-MaterialDesignSearchUIUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MaterialDesignSearchbarUITests/Info.plist;
