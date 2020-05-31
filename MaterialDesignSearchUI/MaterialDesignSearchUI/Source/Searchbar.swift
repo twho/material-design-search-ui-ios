@@ -63,7 +63,7 @@ class Searchbar: UIView, UITextFieldDelegate {
         self.layer.cornerRadius = cornerRadius
         self.clipsToBounds = true
         // Set up textField
-        textInput = MaterialTextField(hint: searchbarHint, textColor: foregroundColor, font: ResManager.Font.regular(16.0), bgColor: self.backgroundColor ?? .white, delegate: self)
+        textInput = MaterialTextField(placeholder: searchbarHint, textColor: foregroundColor, bgColor: self.backgroundColor ?? .white, font: ResManager.Font.regular(16.0), delegate: self)
         textInput.autocorrectionType = .no
         textInput.returnKeyType = .search
         textInput.enablesReturnKeyAutomatically = true

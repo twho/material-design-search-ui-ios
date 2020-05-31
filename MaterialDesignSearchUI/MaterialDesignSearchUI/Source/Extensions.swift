@@ -73,19 +73,6 @@ extension NSObject {
         return (UIApplication.shared.delegate as? AppDelegate).unsafelyUnwrapped
     }
 }
-// MARK: - MaterialButton
-extension MaterialButton {
-    /**
-     Convenience init of theme button with just icon.
-     
-     - Parameter icon:         the icon of the button, it is be nil by default.
-     - Parameter bgColor:      the background color of the button, tint color will be automatically generated.
-     - Parameter cornerRadius: the rounded corner radius of the button.
-     */
-    public convenience init(icon: UIImage, bgColor: UIColor = .black, cornerRadius: CGFloat = 12.0) {
-        self.init(icon: icon, bgColor: bgColor, cornerRadius: cornerRadius, withShadow: false)
-    }
-}
 // MARK: - UIView
 extension UIView {
     /**
