@@ -154,7 +154,7 @@ class Searchbar: UIView, UITextFieldDelegate {
         btnLeft.tag = isSearching ? 1 : 0
         btnLeft.setImage(isSearching ? #imageLiteral(resourceName: "ic_back").colored(foregroundColor)! : imgLeftBtn.colored(foregroundColor)!)
         isSearching
-            ? animHplr.moveUpViews([btnLeft], show: true) : animHplr.moveDownViews([btnLeft], show: true)
+            ? animHplr.showViewsByMovingUp([btnLeft]) : animHplr.showViewsByMovingDown([btnLeft])
         if !isSearching {
             textInput.resignFirstResponder()
         }

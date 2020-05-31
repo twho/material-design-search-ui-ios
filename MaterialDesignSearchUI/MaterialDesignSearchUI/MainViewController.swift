@@ -87,8 +87,6 @@ class MainViewController: UIViewController {
         // Set search bar
         self.searchbar.textInput.text = placemark.name
         self.searchbar.textFieldDidEndEditing(self.searchbar.textInput)
-        // Dismiss search results view
-        self.showSearchResultsView(false)
         // Add annotation
         let annotation = MKPointAnnotation()
         annotation.title = placemark.name
@@ -99,9 +97,9 @@ class MainViewController: UIViewController {
     private func showSearchResultsView(_ show: Bool) {
         if show {
             guard maskView.alpha == 0.0 else { return }
-            animHplr.moveUpViews([maskView, searchResultsView], show: true)
+            animHplr.showViewsByMovingUp([maskView, searchResultsView])
         } else {
-            animHplr.moveDownViews([maskView, searchResultsView], show: false)
+            animHplr.hideViewsByMovingDown([maskView, searchResultsView])
             searchResultsView.isScrolling = false
         }
     }
